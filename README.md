@@ -30,7 +30,7 @@ docker logs -f mnist-api
 
 ## Despliegue para dev
 ```bash
-# 1. Instalar dependencias optimizadas
+# 1. Instalar dependencias optimizadasz
 pip install -r requirements.txt
 
 # 2. Levantar el microservicio
