@@ -1,0 +1,40 @@
+# Git y Entornos
+.git
+.gitignore
+.c9
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Variables de Entorno (¡Seguridad!)
+.env
+.env.*
+!.env.example
+
+# Artefactos de MLflow y Jupyter
+mlartifacts/
+mlruns/
+mlflow.db
+*.ipynb
+.ipynb_checkpoints/
+
+# Tests
+.pytest_cache/
+tests/
+
+# Archivos pesados de modelo se descargan en runtime
+*.h5
+*.keras
+
+# Logs
+*.log
+logs/
+
+# Imágenes generadas
+*.png
+!docs/
