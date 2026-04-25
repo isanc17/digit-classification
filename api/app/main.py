@@ -10,6 +10,15 @@ from app.services.model_service import load_model_instance
 from app.routes.predict import router as predict_router
 from app.core.config import settings
 
+import logging
+import sys
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)]
+)
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
